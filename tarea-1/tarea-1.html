@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tarea1-clase6</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Edad Integrantes</h1>
+
+    <div>
+      <form id="calcula-edades">
+        <div>
+          <div>
+            <label for="cantidad-integrantes">Ingrese cantidad de integrantes: </label>
+            <input type="number" id="cantidad-integrantes" />
+            <button type="submit" id="agrega-inputs">Siguiente</button>
+          </div>
+          <div>
+            <div>
+              <div id="integrantes"></div>
+              <button type="submit" id="calcular" class="oculto">Calcular</button>
+              <button type="submit" id="borrar-todo" class="oculto">Empezar de nuevo</button>
+            </div>
+            <div>
+              <div id="calculo" class="oculto">
+                <label for="mayor-edad">La mayor edad es: </label>
+                <input type="number" disabled id="mayor-edad" />
+                <label for="menor-edad">La menor edad es: </label>
+                <input type="number" disabled id="menor-edad" />
+                <label for="promedio-edad">El promedio de edades es: </label>
+                <input type="number" disabled id="promedio-edad" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script type="text/javascript" src="tarea-1.js"></script>
+  </body>
+</html>
