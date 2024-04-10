@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tarea2-clase6</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="display-1">Calculadora Salarios</h1>
+
+    <div>
+      <div>
+        <div>
+          <h2>Salarios</h2>
+          <button type="button" id="agregar-input">Agregar</button>
+          <div id="integrantes"></div>
+          <button type="button" id="eliminar-input">Eliminar</button>
+          <button type="button" id="calcular" class="oculto">Calcular</button>
+        </div>
+      </div>
+      <div>
+        <div id="calculo" class="oculto">
+          <label for="mayor-salario-anual">El mayor salario anual es: </label>
+          <input type="number" disabled id="mayor-salario-anual" />
+          <label for="menor-salario-anual">El menor salario anual es: </label>
+          <input type="number" disabled id="menor-salario-anual" />
+          <label for="promedio-salario-anual">El promedio de salarios anuales es: </label>
+          <input type="number" disabled id="promedio-salarios-anuales" />
+          <label for="promedio-salario-mensuales">El promedio de salarios mensuales es: </label>
+          <input type="number" disabled id="promedio-salarios-mensuales" />
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="tarea-2.js"></script>
+  </body>
+</html>
