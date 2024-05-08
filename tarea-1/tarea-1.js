@@ -65,9 +65,9 @@ function obtenerEdadesIntegrantes() {
 
 document.querySelector("#calcular").onclick = function (event) {
   const edades = obtenerEdadesIntegrantes();
-  const mayorEdad = calcularMayorEdad(edades);
-  const menorEdad = calcularMenorEdad(edades);
-  const promedioEdades = calculaPromedioEdades(edades);
+  const mayorEdad = calcularMayorNumero(edades);
+  const menorEdad = calcularMenorNumero(edades);
+  const promedioEdades = calculaPromedio(edades);
 
   document.querySelector("#mayor-edad").value = `${mayorEdad}`;
   document.querySelector("#menor-edad").value = `${menorEdad}`;
@@ -78,34 +78,34 @@ document.querySelector("#calcular").onclick = function (event) {
   event.preventDefault();
 };
 
-function calcularMayorEdad(edades) {
-  let mayorEdad = edades[0];
-  for (let i = 0; i < edades.length; i++) {
-    if (edades[i] > mayorEdad) {
-      mayorEdad = edades[i];
+function calcularMayorNumero(numeros) {
+  let mayorNumero = numeros[0];
+  for (let i = 0; i < numeros.length; i++) {
+    if (numeros[i] > mayorNumero) {
+      mayorNumero = numeros[i];
     }
   }
 
-  return mayorEdad;
+  return mayorNumero;
 }
 
-function calcularMenorEdad(edades) {
-  let menorEdad = edades[0];
-  for (let i = 0; i < edades.length; i++) {
-    if (edades[i] < menorEdad) {
-      menorEdad = edades[i];
+function calcularMenorNumero(numeros) {
+  let menorNumero = numeros[0];
+  for (let i = 0; i < numeros.length; i++) {
+    if (numeros[i] < menorNumero) {
+      menorNumero = numeros[i];
     }
   }
 
-  return menorEdad;
+  return menorNumero;
 }
 
-function calculaPromedioEdades(edades) {
+function calculaPromedio(numeros) {
   let promedio = 0;
-  for (let i = 0; i < edades.length; i++) {
-    promedio += edades[i];
+  for (let i = 0; i < numeros.length; i++) {
+    promedio += numeros[i];
   }
-  promedio = promedio / edades.length;
+  promedio = promedio / numeros.length;
 
   return promedio;
 }
